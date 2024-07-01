@@ -1,0 +1,10 @@
+[Unit]
+Description=Lenovo Yoga Pro 9i 16IMH9 -- Setup speakers configuration using I2C bus
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/lenovo-yoga-pro-9i-16imh9--speakers-setup
+RemainAfterExit=yes
+
+[Install]
+WantedBy=sound.target
